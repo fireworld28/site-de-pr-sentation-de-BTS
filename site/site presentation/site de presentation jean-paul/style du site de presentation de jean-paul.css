@@ -1,0 +1,99 @@
+/* fichier css pour ma page de présentation */
+
+* {
+    margin: 0px;
+}
+
+
+.body {
+
+    background-color: rgb(88, 86, 86) ;
+    color : rgb(190, 186, 186) ;
+    text-decoration-color: rgb(190, 186, 186);
+
+}
+
+.titre_du_site {
+
+    --taille_du_titre : 50px;
+    text-align : center ;
+    font-size: var(--taille_du_titre);
+    font-style: italic;
+    text-decoration: underline;
+    background-color: #1A1717;
+    height: 10vh;
+    
+}
+
+.présentation {
+
+    margin-bottom: 5vh ;
+    display: inline-block ;
+    white-space: nowrap ;
+
+}
+
+.photo_portrait {
+
+    width: 303px ;
+    height: 465px ;
+    margin-left: 0.5vw ;
+    margin-right: 0.5vw ;
+    float: left ;
+    object-fit: cover ;
+
+}
+
+.présentation > h1 {
+
+    font-size: 40px ;
+
+}
+
+.présentation > p {
+
+    font-size: 30px ;
+
+}
+
+.intérêt {
+
+  display: inline-flex ;
+  align-items: flex-start ; 
+
+}
+
+.intérêt h1 {
+
+    font-size: 40px ;
+
+}
+
+.intérêt > div > p {
+
+    font-size: 30px ;
+
+}
+
+.intérêt > img {
+
+    float: righ ;
+    width: 481px ;
+    height: 291px ;
+    object-fit: cover ;
+
+}
+
+.logo_home {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.logo_home > img {
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+}
+
+ 

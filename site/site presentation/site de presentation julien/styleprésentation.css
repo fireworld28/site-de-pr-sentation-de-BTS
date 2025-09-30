@@ -1,0 +1,77 @@
+/* style.css */
+
+body {
+  background-color: #dcdcdc; /* gris clair */
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  color: #000;
+}
+
+.titre-principal {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+hr {
+  border: 1px solid black;
+  width: 75%;
+  margin: 30px auto;
+}
+
+.image-container {
+  text-align: center;
+  margin: 30px ;
+}
+
+.image-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.table-infos {
+  border-collapse: collapse;
+  width: 40%; 
+  margin: 20px auto; 
+  background-color: white;
+}
+
+.table-infos td {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.description {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.description h2 {
+  font-size: 22px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*logo fleche(position et taille)*/
+.logo_home {
+position: fixed;
+right: 10px;
+bottom: 10px;
+}
+.logo_home > img {
+height: 128px;
+width: 128px;
+object-fit: cover;
+}

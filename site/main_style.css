@@ -1,0 +1,81 @@
+*{
+   margin: 0px;
+   color:rgb(255, 255, 255) ;
+   text-decoration-color: rgb(255, 255, 255) ;
+}
+
+
+
+ .titre{
+
+   background: linear-gradient(90deg, rgb(10, 97, 228), rgb(110, 168, 255));
+   border: 0px ;
+   margin: 0px ;
+   height: 25vh ;
+
+   
+   line-height: 25vh ;
+   font-size: 100px ;
+   text-decoration: underline ;
+   text-align: center ;
+   
+   font-weight: bolder ;
+   font-style: italic ;
+
+ }
+
+
+
+
+.grille-image{
+
+    /* --nom de la variable : unité;*/
+    --hauteur : 50vh;
+    --longueur: 100vw;
+    --marge : 30px;
+
+
+   height: var(--hauteur);
+   width: var(--longueur);
+   margin-top: var(--marge);
+
+   display: grid; 
+   /* faire une grille pour mettre les image dans une case de la grille */
+   grid-template-columns: repeat(6, 1fr);  
+   grid-template-rows: 1fr 1fr;
+   /* pour créer des colonnes on fait ex = grid-template-columns: 1fr 1fr 1fr (fr ou fraction est une unité de css qui est selon espace disponible donc 1 fr est 1 part de l'espace disponible */
+   /* repeat() permet de repeter un élément d'une liste; pour notre cas 5 fois 1 fr donc on a repeat(5 , 1fr) au lieu de 1fr 1fr 1fr 1fr 1fr*/
+   grid-gap: 10px;
+
+}
+
+
+
+
+.grille-image > a > img {
+
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border: 3px solid rgb(190, 186, 186);
+
+}
+
+.grille-image > h1 {
+
+   text-align: center;
+
+}
+
+/*logo fleche(position et taille)*/
+.logo_home {
+position: fixed;
+right: 10px;
+bottom: 10px;
+}
+
+.logo_home > img {
+height: 128px;
+width: 128px;
+object-fit: cover;
+}
